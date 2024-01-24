@@ -376,6 +376,12 @@ section{
 
 /*  */
 @media screen and (max-width:768px) {
+    .BoxDidalam{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     /* SECTION */
     .isinyaSectionHome{
         max-width: 265px;

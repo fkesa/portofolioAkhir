@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="navbarheader">
+    <header class="navbarheader" id="header">
         <div class="containernav">
             <div class="navbarlogo sidekiri">
                 <a href="#">Tsabit Fissabilillah</a>
@@ -63,8 +63,8 @@
                     <div class="one">
                         <h1>Keahlian</h1>
                         <p>Front-End & Back-End Developer</p>
-                        <p>Data Analyst</p> 
-                        <p>Kemampuan Analisis Masalah</p> 
+                        <p>Data Analyst</p>
+                        <p>Kemampuan Analisis Masalah</p>
                         <p>IT Support</p>
                         <p></p>
                     </div>
@@ -109,7 +109,7 @@
                         <h3>Tugas Akhir Semester 1</h3>
                         <p>Saya Mengerjakan Tugas Ini dengan Teman Saya</p>
                         <a target="_blank" href="https://fkesa.github.io/Porto2/" class="btn">Link</a>
-                        
+
                     </div>
                     <div class="boxPorto">
                         <img src="assets/img/Martim.jpg">
@@ -140,14 +140,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
 <script>
-    $(window).scroll(function () {
-        if ($(document).scrollTop() > 40) {
-            $('.navbarheader').addClass('classnone');
-            console.log("OK");
-        } else {
-            $('.navbarheader').removeClass('classnone');
-        }
-    });
+        $(window).scroll(function () {
+            if ($(document).scrollTop()>40) {
+                $(".navbarheader").addClass("classeffect");
+                console.log("OK");
+            } else {
+                $(".navbarheader").removeClass("classeffect");
+            }
+        });
 </script>
-
 </html>
