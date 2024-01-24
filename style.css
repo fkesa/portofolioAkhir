@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+:root{
+    --primary:rgba(227, 229, 121, 0.553);
+    --hover : aqua;
+    --porto : rgba(255, 255, 0, 0.553);
+    --sec   : rgb(119, 111, 111,0.6);
+    --alami : rgb(53, 53, 53);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 15px;
+}
+
+html{
+    scroll-behavior:smooth;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+    font-size: 2.2rem;
+}
+
+header a{
+    text-decoration: none;
+}
+
+.navbarheader{
+    transition: 0.2s;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-size: cover;
+}
+
+.classeffect{
+    transform: ease;
+    transition: 0.2s;
+    padding: 20px 0;
+    background-color: var(--sec);
+}
+
+.classnone{
+    transform: ease;
+    transition: 0.3s;
+    display: none;
+}
+
+.containernav{
+    text-align: center;
+    align-items: center;
+    width: auto;
+}
+
+.navbarlogo{
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.navbarlogo a{
+    float: left;
+    color: white;
+}
+
+.main_list ul{
+    display: flex;
+    margin: 0;
+    list-style: none;
+}
+
+.main_list ul li{
+    padding-right: 30px;
+}
+
+.main_list ul li a{
+    color: white;
+}
+
+.main_list ul li a:hover{
+    color: var(--hover);
+}
+
+.navTrigger {
+    display: none;
+}
+
+.sidekiri{
+    float: left;
+}
+
+.sidekanan{
+    float: right;
+}
+
+section{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SECTION HOME */
+#home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--sec);
+    /* background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80); */
+    background-size: cover;
+}
+
+.BoxSectionHome{
+    align-items: center;
+    padding: padding ;
+    display: flex;
+    flex-direction: row;
+}
+
+.fotoHome{
+    padding: 20px;    
+}
+
+.fotoHome img{
+    width: 300px;
+    border-radius: 300px ;
+}
+
+.isinyaSectionHome{
+    padding:20px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--alami);
+}
+
+.isinyaSectionHome h2,
+.isinyaSectionHome p{
+    color: #fff;
+    margin: 0;
+    font-size: 40px;
+}
+
+/* Section About ME*/
+#aboutme{
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    background-color: var(--alami);
+}
+
+.BoxSectionAbout{
+    display: flex;
+}
+
+.IsinyaSectionAbout{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px ;
+    max-width: 1000px;
+}
+
+.one{
+    display: flex;
+    max-width:500px;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.IsinyaSectionAbout h1{
+    color: #fff;
+    margin: 0;
+    font-size: 50px;
+    text-decoration: underline 2px;
+}
+
+.IsinyaSectionAbout p{
+    color: #fff;
+    margin: 7px;
+    font-size: 20px;
+}
+
+/* Section CV */
+#cv{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--sec);
+    background-size: cover;
+    background-position: center top;
+    padding: 20px 0;
+}
+
+.BoxSectionCV{
+    border-radius: 20px;
+    background-color: var(--primary);
+    padding: 30px;
+    width: auto;
+    height: auto;
+}
+
+.BoxMYCV{
+    padding:10px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--alami);
+}
+
+.BoxMYCV p{
+    color: #fff;
+    margin: 0;
+    font-size: 25px;
+    font-weight:bold;
+}
+
+.IsinyaSectionCV{
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+
+
+/* Section Portofolio */
+#portofolio{
+    padding: 20px 0 30px 0;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    background-color: var(--alami);
+}
+
+
+.IsinyaSectionPortofolio h1{
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline 2px;
+}
+
+.BoxDidalam{
+    width: auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.boxPorto{
+    width: 300px;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 30px;
+    background-color: rgb(136, 136, 250);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxPorto img{
+    border-radius: 10px;
+    width: auto;
+    max-width: 330px;
+    height: fit-content;
+}
+
+.boxPorto h3{
+    padding-top: 10px;
+    font-size: 20px;
+    margin:  0;
+}
+
+.boxPorto p{
+    margin: 0;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.boxPorto .ket{
+    padding-top: 7px;
+    font-style: italic;
+    font-size: 13px;
+    color: rgb(88, 82, 82);
+}
+
+/* BUTTON */
+.btn{
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 8px 36px;
+    border: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+
+/* FOOTER */
+.BoxFooter{
+    border-top: 1px solid black;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--sec);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/* Media Screen */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .containernav {
+        margin: 0;
+    }
+    .IsinyaSectionAbout h1{
+        color: #fff;
+        margin: 0;
+        font-size: 30px;
+        text-decoration: underline 1px;
+    }
+    
+    #aboutme{
+        height: auto;
+    }
+
+    .IsinyaSectionAbout p{
+        color: #fff;
+        margin: 3.5px;
+        font-size: 20px;
+    }
+
+    .BoxSectionCV{
+        border-radius: 20px;
+        background-color: var(--primary);
+        padding: 30px;
+        width: auto;
+        height: auto;
+    }
+    .IsinyaSectionAbout p{
+        color: #fff;
+        margin: 3.5px;
+        font-size: 20px;
+    }
+
+    .IsinyaSectionCV{
+        min-width: 400px;
+    }
+}
+
+/*  */
+@media screen and (max-width:768px) {
+    /* SECTION */
+    .isinyaSectionHome{
+        max-width: 265px;
+    }
+
+    .BoxSectionHome{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .IsinyaSectionAbout h1{
+        color: #fff;
+        margin: 0;
+        font-size: 30px;
+        text-decoration: underline 1px;
+    }
+    
+    .IsinyaSectionAbout p{
+        color: #fff;
+        margin: 3.5px;
+        font-size: 20px;
+    }
+
+    .IsinyaSectionCV{
+        min-width: 265px;
+    }
+
+    .BoxSectionCV{
+        padding: 10px 20px;
+    }
+
+    .boxPorto{
+        width: 265px;
+        border-radius: 15px;
+        margin: 30px;
+        padding: 30px;
+        background-color: rgb(136, 136, 250);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .boxPorto img{
+        border-radius: 10px;
+        width: auto;
+        max-width: 300px;
+        height: fit-content;
+    }
+    
+
+    .navTrigger {
+        display: block;
+    }
+    .navbarheader div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .navbarheader div.show_list {
+        transition: 2s ease;
+        height: auto;
+        display: block!important;
+    }
+    .navbarheader div.main_list ul {
+        flex-direction: column;
+        width: auto;
+        margin: 20px 0;
+        padding: 10px;
+        height: 100vh;
+        transition: 1s;
+        border-radius: 7px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(17, 17, 17, 0.791);
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .navbarheader div.main_list ul li {
+        padding-right:10px  ;
+        width: 100%;
+        text-align: right;
+        padding: 8px 0 10px 0;
+    }
+    .navbarheader div.main_list ul li a {
+        text-align: center;
+        padding: 0 20px ;
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    .navbarheader div.media_button {
+        display: block;
+    }
+}
+
+    /* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+    .navTrigger {
+        cursor: pointer;
+        width: 30px;
+        height: 25px;
+        float: right;
+        /* margin: auto; */
+        top: 0;
+        bottom: 0;
+        margin-right: 20px;
+}
+    
+    .navTrigger i {
+        background-color: #fff;
+        border-radius: 2px;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+    }
+    
+    .navTrigger i:nth-child(1) {
+        -webkit-animation: outT 0.8s backwards;
+        animation: outT 0.8s backwards;
+        -webkit-animation-direction: reverse;
+        animation-direction: reverse;
+    }
+    
+    .navTrigger i:nth-child(2) {
+        margin: 5px 0;
+        -webkit-animation: outM 0.8s backwards;
+        animation: outM 0.8s backwards;
+        -webkit-animation-direction: reverse;
+        animation-direction: reverse;
+    }
+    
+    .navTrigger i:nth-child(3) {
+        -webkit-animation: outBtm 0.8s backwards;
+        animation: outBtm 0.8s backwards;
+        -webkit-animation-direction: reverse;
+        animation-direction: reverse;
+    }
+    
+    .navTrigger.active i:nth-child(1) {
+        -webkit-animation: inT 0.8s forwards;
+        animation: inT 0.8s forwards;
+    }
+    
+    .navTrigger.active i:nth-child(2) {
+        -webkit-animation: inM 0.8s forwards;
+        animation: inM 0.8s forwards;
+    }
+    
+    .navTrigger.active i:nth-child(3) {
+        -webkit-animation: inBtm 0.8s forwards;
+        animation: inBtm 0.8s forwards;
+    }
+    
+    @-webkit-keyframes inM {
+        50% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(45deg);
+        }
+    }
+    
+    @keyframes inM {
+        50% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(45deg);
+        }
+    }
+    
+    @-webkit-keyframes outM {
+        50% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(45deg);
+        }
+    }
+    
+    @keyframes outM {
+        50% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(45deg);
+        }
+    }
+    
+    @-webkit-keyframes inT {
+        0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            -webkit-transform: translateY(9px) rotate(0deg);
+        }
+        100% {
+            -webkit-transform: translateY(9px) rotate(135deg);
+        }
+    }
+    
+    @keyframes inT {
+        0% {
+            transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            transform: translateY(9px) rotate(0deg);
+        }
+        100% {
+            transform: translateY(9px) rotate(135deg);
+        }
+    }
+    
+    @-webkit-keyframes outT {
+        0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            -webkit-transform: translateY(9px) rotate(0deg);
+        }
+        100% {
+            -webkit-transform: translateY(9px) rotate(135deg);
+        }
+    }
+    
+    @keyframes outT {
+        0% {
+            transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            transform: translateY(9px) rotate(0deg);
+        }
+        100% {
+            transform: translateY(9px) rotate(135deg);
+        }
+    }
+    
+    @-webkit-keyframes inBtm {
+        0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            -webkit-transform: translateY(-9px) rotate(0deg);
+        }
+        100% {
+            -webkit-transform: translateY(-9px) rotate(135deg);
+        }
+    }
+    
+    @keyframes inBtm {
+        0% {
+            transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            transform: translateY(-9px) rotate(0deg);
+        }
+        100% {
+            transform: translateY(-9px) rotate(135deg);
+        }
+    }
+    
+    @-webkit-keyframes outBtm {
+        0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            -webkit-transform: translateY(-9px) rotate(0deg);
+        }
+        100% {
+            -webkit-transform: translateY(-9px) rotate(135deg);
+        }
+    }
+    
+    @keyframes outBtm {
+        0% {
+            transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            transform: translateY(-9px) rotate(0deg);
+        }
+        100% {
+            transform: translateY(-9px) rotate(135deg);
+        }
+    }
+

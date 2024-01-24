@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbarheader">
+        <div class="containernav">
+            <div class="navbarlogo sidekiri">
+                <a href="#">Tsabit Fissabilillah</a>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+            <div id="mainListDiv" class="main_list sidekanan">
+                <ul class="navlinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#cv">My CV</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="home">
+        <div class="BoxSectionHome">
+            <div class="fotoHome">
+                <img src="assets/img/user2.jpg" alt="Fotoku">
+            </div>
+            <div class="isinyaSectionHome">
+                <h2>Hello!</h2>
+                <p>I'm Tsabit Fissabilillah</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutme">
+        <div class="BoxSectionAbout">
+            <div class="IsinyaSectionAbout">
+                <div class="two">
+                    <div class="one">
+                        <h1>About Me</h1>
+                        <p>Nama : Tsabit Fissabilillah </p>
+                        <p>Usia : 15 </p>
+                        <p>Hobi : Bermain Game dan Membaca</p>
+                        <p>Tanggal Lahir : 20 Juni 2008 </p>
+                    </div>
+                    <div class="one">
+                        <h1>Alamat</h1>
+                        <p>Graha Asri Sukodono Blok AM08 Sukodono, Sidoarjo, Jawa Timur</p>
+                    </div>
+                </div>
+                <div class="two">
+                    <div class="one">
+                        <h1>Keahlian</h1>
+                        <p>Front-End & Back-End Developer</p>
+                        <p>Data Analyst</p> 
+                        <p>Kemampuan Analisis Masalah</p> 
+                        <p>IT Support</p>
+                        <p></p>
+                    </div>
+                    <div class="one">
+                        <h1>Pendidikan</h1>
+                        <p>SDIT Nurul Fikri Sidoarjo</p>
+                        <p>SMP Baitul Qur'an Sambirejo</p>
+                        <p>SMK Telkom Sidoarjo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="cv">
+        <div class="BoxSectionCV">
+            <div class="IsinyaSectionCV">
+                <div class="BoxMYCV">
+                    <p>My CV</p>
+                </div>
+                <div style="position: relative; width: 100%; height: 0; padding-top: 141.4286%; scale: fit-content;
+                padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                border-radius: 8px; will-change: transform;">
+                    <iframe loading="lazy"
+                        style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                        src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF1UtnjU5U&#x2F;view?embed"
+                        allowfullscreen="allowfullscreen" allow="fullscreen">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portofolio">
+        <div class="BoxSectionPortofolio">
+            <div class="IsinyaSectionPortofolio">
+                <h1>Portofolio</h1>
+                <div class="BoxDidalam">
+                    <div class="boxPorto">
+                        <img src="assets/img/Tugas Akhir 1.jpg">
+                        <h3>Tugas Akhir Semester 1</h3>
+                        <p>Saya Mengerjakan Tugas Ini dengan Teman Saya</p>
+                        <a target="_blank" href="https://fkesa.github.io/Porto2/" class="btn">Link</a>
+                        
+                    </div>
+                    <div class="boxPorto">
+                        <img src="assets/img/Martim.jpg">
+                        <h3>Lomba Website</h3>
+                        <p>Lomba ini membuat Website tentang Kemaritiman</p>
+                        <a target="_blank" href="https://fkesa.github.io/Porto1/" class="btn">Link</a>
+                    </div>
+                    <div class="boxPorto">
+                        <img src="assets/img/CRUD.jpg">
+                        <h3>Lomba Database CRUD</h3>
+                        <p>Disini Saya Membuat Website untuk Membuat Data, Mengedit Data, Menghapus Data </p>
+                        <p class="ket">* Mohon Maaf file php tidak dapat ditampilkan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="BoxFooter">
+            <div class="Footer">
+                <p>&copy;2024 Tsabit Fissabilillah</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+<script>
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 30) {
+            $('.navbarheader').addClass('classeffect');
+            console.log("OK");
+        } else {
+            $('.navbarheader').removeClass('classeffect');
+        }
+    });
+</script>
+
+</html>
